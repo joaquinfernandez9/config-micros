@@ -4,7 +4,7 @@ spring:
   cloud: 
    gateway: 
     routes:
-      - id: catalog
-        uri: lb://catalog/
+      - id: games
+        uri: lb://games/
         predicates:
-          - Path=/product/**
+          - Path=/games/**
