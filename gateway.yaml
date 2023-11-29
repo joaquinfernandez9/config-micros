@@ -5,6 +5,6 @@ spring:
    gateway: 
     routes:
       - id: catalog
-        uri: lb://games/
+        uri: lb://catalog/
         predicates:
           - Path=/games/**
